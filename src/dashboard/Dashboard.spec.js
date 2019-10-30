@@ -3,7 +3,6 @@
 import React from 'react';
 import * as rtl from '@testing-library/react';
 import "@testing-library/jest-dom/extend-expect";
-import "jest-dom/extend-expect";
 
 import Dashboard from './Dashboard';
 
@@ -14,7 +13,7 @@ afterEach(rtl.cleanup);
 test('does it render the controls component', () => {
     const wrapper = rtl.render(<Dashboard />)
 
-    const element = wrapper.findByText(/controls/i)
+    const element = wrapper.findByTitle(/controls/i)
 
     wrapper.debug()
 
@@ -22,3 +21,12 @@ test('does it render the controls component', () => {
 })
 
 // renders display
+test('does it render display component', () => {
+    const wrapper = rtl.render(<Dashboard />)
+
+    const element = wrapper.findByTitle(/display/i)
+
+    wrapper.debug()
+
+    expect(element).toBeTruthy();
+})
