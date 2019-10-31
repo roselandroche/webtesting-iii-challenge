@@ -49,7 +49,7 @@ Your job is to write unit tests to ensure that the application behaves as expect
 
 The expected/assumed behavior of the application is listed below.
 
-### Gate (in Dashboard - Parent component)
+### Gate
 
 - defaults to `unlocked` and `open`
 - cannot be closed or opened if it is locked
