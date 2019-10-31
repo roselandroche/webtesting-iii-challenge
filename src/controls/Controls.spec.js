@@ -3,7 +3,7 @@ import React from 'react';
 import * as rtl from '@testing-library/react';
 import "@testing-library/jest-dom/extend-expect";
 
-import Display from './Display';
+import Controls from './Controls';
 
 // clean up after each test, reset DOM etc
 afterEach(rtl.cleanup);
